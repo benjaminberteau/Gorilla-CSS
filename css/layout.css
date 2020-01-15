@@ -1,0 +1,81 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+
+}
+
+
+header {
+background-color: red;
+}
+
+header:after {
+
+}
+
+header nav {
+display: inline-block;
+}
+
+header nav li {
+
+}
+
+.site-id {
+position: absolute;
+top: 1em;
+left: 1em;
+}
+
+
+/*### Hero Block per page type ###*/
+
+.hero {
+
+}
+
+.introduction {
+
+}
+
+.introduction h2 {
+
+}
+
+/*## For the Home Page ##*/
+
+.home .hero {
+
+}
+
+.home .introduction {
+
+}
+
+/*## For the Dossier Page ##*/
+
+.dossier .hero  {
+
+}
+
+/*## list Page ##*/
+
+.gorilla-list {
+
+}
+
+.goilla-list-item {
+
+}
+
+.gorilla-list img {
+
+}
+
+
+
+footer {
+
+}

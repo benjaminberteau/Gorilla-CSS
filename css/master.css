@@ -1,0 +1,363 @@
+
+/*#### The Logo ####*/
+/*#### Very Old school ####*/
+
+.site-id {
+ display: flex;
+position: absolute;
+ top: 0px;
+ left: 80px;
+ opacity: 0.2;
+}
+
+
+.logo {
+  width: 80px;
+  height: auto;
+  
+
+}
+
+.site-title {
+float: left;
+}
+
+/*#### Navigation ####*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+header {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+    /* 3 spans pour faire le menu burger */
+.menu-toggle .burger-breads span{
+    display:block;
+    width: 33px;
+    height: 4px;
+    background: #cdcdcd;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-close .burger-breads span{
+    display:block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    transform: rotate(45deg) translate(-2px,-1px);
+    background: #d9e8bc;
+    z-index: 1;
+}
+
+/* positionnement croix de fermeture du menu */ 
+.menu-close .burger-breads span:nth-child(2){
+    transform: rotate(135deg) translate(-7px, 9px);
+}
+
+.menu-close .burger-breads span:nth-child(3){
+   opacity: 0;
+}
+
+.menu-toggle{
+    display:inline-block;
+    padding: 1em;
+}
+
+.main-menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    transition: left 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999;
+}
+
+.main-menu ul{
+    margin: 0;
+    padding: 2.5em 0 0;
+    min-height: 800px;
+    width: 300px;
+    background: #86a44a;
+}
+
+.main-menu a{
+    display: block;
+    padding: 0.75em 15px;
+    line-height: 5em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #99b75d;  
+}
+
+.main-menu li:first-child a{
+    border-top: 1px solid #99b75d;
+}
+
+ul a:hover,
+ul a:focus {
+  background: #6e8b36;
+  text-decoration: underline;
+}
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top:7px;
+  border-bottom: 1px solid transparent;
+}
+
+.main-menu{
+    display: none;
+    left: -200px;
+}
+
+.main-menu:target{
+    display: block;
+    left: 0px;
+    outline: none;
+    box-shadow: 3px 0 12px #86a44a .25;
+
+}
+
+.main-menu:target .menu-close{
+    z-index: 1001;
+}
+
+.main-menu:target ul{
+    position: relative;
+    z-index: 1000;
+}
+
+.main-menu:target + .backdrop {
+    position: absolute;
+    display: block;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    opacity: 0.7;
+    cursor: default;
+}
+
+@supports (position: fixed){
+    .main-menu,
+    .main-menu:target + .backdrop {
+        position:fixed;
+    }
+    
+}
+
+h1{
+  font-size: 2em;
+
+}
+
+.hero h2{
+  font-size: 3em;
+}
+
+.teaser-list h3{
+    font-size: 2em;
+  text-align: center;
+
+}
+
+h2{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 01em;
+    letter-spacing: 10px;
+    color: #cdcdcd;
+    text-transform: uppercase;
+}
+
+/*#### Columns ####*/
+/*#### reading ####*/
+
+
+
+.main-content {
+  display: flex;
+  text-align: justify;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1em;
+  margin: 2em;
+  margin-right: em;
+  margin-left: 4em;
+}
+
+.text-main{
+    width: 30%;
+}
+
+.hero{
+  background-image: url(../images/paysage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero p{
+  font-size: 1.2em;
+}
+
+figure{
+  width: 20em;
+}
+
+.gorilla-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*#### Teaser List ####*/
+/*#### Homepage ####*/
+
+.teaser-list {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+
+
+}
+
+.product-list-item {
+border-radius: 5px;
+border: solid 1px #CECECE;
+padding-left: 2px;
+text-align: center;
+margin: auto;
+margin-top: 2em;
+width: 350px;
+height: 500px;
+
+
+}
+
+.product-list-item:hover{
+box-shadow: 5px 5px 15px 1px rgba(133, 133, 133, 0.3);
+background-color: #cccccc6b;
+ 
+}
+
+.product-list-item img {
+width: 100%;
+}
+
+.product-list-item figure{
+    width: 78%;
+}
+
+.product-list-item a{
+    width:100%;
+}
+
+.gorilla-list-item{
+    border-radius: 5px;
+    border: solid 1px #CECECE;
+    padding-left: 2px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    flex-basis: unset;
+}
+
+.gorilla-list-item:hover{
+box-shadow: 5px 5px 15px 1px rgba(133, 133, 133, 0.3);
+background-color: #cccccc6b;
+}
+
+/*### dossier-top Styles ###*/
+
+.dossier-top {
+display: flex;
+flex-direction: row;
+}
+
+.dossier-top img {
+  height: auto;
+  width: 50%;
+}
+
+.dossier-top-content {
+      text-align: center;
+      margin-top: 20%;
+      width:100%;
+}
+
+.dossier-top-content div {
+
+
+  }
+
+
+.strip-image {
+
+}
+
+.strip-image img {
+height: 100px;
+width: 100%;
+}
+
+.more-link {
+text-decoration: none;
+border: solid 1px #86a44a;
+text-align: justify;
+border-radius: 5px;
+padding-right: 30%; 
+padding-left: 30%;
+padding-bottom: 5%;
+padding-top: 5%;
+color: #86a44a;
+
+}
+
+.more-link a{
+    vertical-align: middle;
+   
+}
+
+figure a{
+    margin-top: 20em;
+}
+
+.more-link:hover {
+background-color: #86a44a;
+color: white;
+}
+
+
+/*### FOOTER Styles ###*/
+
+footer {
+background-color: black;
+color: white;
+text-decoration: none;
+}
+
+footer h1 {
+font-size: 1em;
+}
+
+footer a {
+
+}
