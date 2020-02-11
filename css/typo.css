@@ -1,4 +1,4 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
 
 
 body {
@@ -6,21 +6,38 @@ body {
 }
 
 p {
-
+font-family: 'Poppins';
 }
 
 h1, h2, h3, h4, h5, h6 {
+font-family: 'Lilita One', sans-serif;
 
+margin: 0em auto 0em auto;
 }
 
 h1 {
-
+font-size: 4rem;
+text-transform: uppercase;
 }
 
-h2 {}
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
 
-h3 {}
+h3 {
+    font-size: 3em;
+}
 
 h4 {}
 
 h5 {}
+
+.more-link {
+color:#252525;
+font-size: 15px;
+font-weight: bolder;
+font-family: 'Poppins';
+text-decoration: none;
+
+}
